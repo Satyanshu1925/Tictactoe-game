@@ -8,7 +8,7 @@ void convert(int);
 void enter(int,int);
 void test();
 void check();
-void main()
+int main()
 {
     printf("Player one please enter your symbol X or O \t");
     scanf("%c",&ch);
@@ -130,11 +130,13 @@ void test()
 {
     if((arr[1][1]=='X' && arr[1][5]=='X' && arr[1][9]=='X' )||(arr[4][1]=='X' && arr[4][5]=='X' && arr[4][9]=='X' )||(arr[7][1]=='X' && arr[7][5]=='X' && arr[7][9]=='X' )||(arr[1][1]=='X' && arr[4][1]=='X' && arr[7][1]=='X' )||(arr[1][5]=='X' && arr[4][5]=='X' && arr[7][5]=='X' )||(arr[1][9]=='X' && arr[4][9]=='X' && arr[7][9]=='X' )||(arr[1][1]=='X' && arr[4][5]=='X' && arr[7][9]=='X' )||(arr[1][1]=='X' && arr[4][5]=='X' && arr[7][1]=='X' ))
     {
+        print();
          printf("Player one wins");
          exit(0);
     }
      if((arr[1][1]=='O' && arr[1][5]=='O' && arr[1][9]=='O' )||(arr[4][1]=='O' && arr[4][5]=='O' && arr[4][9]=='O' )||(arr[7][1]=='O' && arr[7][5]=='O' && arr[7][9]=='O' )||(arr[1][1]=='O' && arr[4][1]=='O' && arr[7][1]=='O' )||(arr[1][5]=='O' && arr[4][5]=='O' && arr[7][5]=='O' )||(arr[1][9]=='O' && arr[4][9]=='O' && arr[7][9]=='O' )||(arr[1][1]=='O' && arr[4][5]=='O' && arr[7][9]=='O' )||(arr[1][1]=='O' && arr[4][5]=='O' && arr[7][1]=='O' ))
     {
+        print();
         printf("Player two wins");
         exit(0);
     }
